@@ -35,6 +35,9 @@ class MainActivity : ComponentActivity() {
                         composable(route = "login") {
                             LoginScreen(modifier = Modifier.padding(innerPadding), navController)
                         }
+                        composable(route = "menu") {
+                            MenuScreen(modifier = Modifier.padding(innerPadding), navController)
+                        }
                         composable(
                             route = "pedidos?cliente={cliente}",
                             arguments = listOf(navArgument("cliente") {
